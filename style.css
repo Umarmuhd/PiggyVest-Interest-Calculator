@@ -1,0 +1,164 @@
+*, body {
+    padding: 0;
+    margin: 0;
+}
+
+#main-body {
+    position: relative;
+}
+
+.body-col {
+    width: 100%;
+}
+
+.page-content {
+    width: 80%;
+    margin: 15% auto;
+    color: #000080;
+}
+
+.blue-bg {
+    background: #000080;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.form-container {
+    background: #fff;
+    width: 50%;
+    margin: 15% auto;
+    padding: 5% 10px;
+}
+
+/* all contents */
+.page-title {
+    font-size: 2rem;
+    padding: 10px;
+}
+
+.page-paragraph {
+    font-size: 1.2rem;
+    line-height: 1.3em;
+    padding: 10px;
+}
+
+.calc-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+}
+
+.grid-col label {
+    padding: 5px;
+    display: block;
+    font-weight: bold;
+}
+
+.input-col, .grid-col select {
+    padding: 10px;
+    margin: 5px;
+    background: rgba(0, 0, 255, 0.1);
+    border: navy;
+    color: #000080;
+}
+
+.input-col {
+    width: 90%;
+}
+
+.grid-col select {
+    width: 100%;
+}
+
+.calc-btn {
+    align-items: right;
+}
+
+button {
+    background: #000080;
+    color: #fff;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    margin: 10px 0 10px auto;
+}
+
+.calc-btn button {
+    width: 50%;
+}
+
+/* part 2 content*/
+.form-col {
+    padding: 10px;
+    width: 60%;
+    margin: 15px auto 0 auto;
+    text-align: left;
+    color: #000080;
+}
+
+.interest, .duration {
+    background: rgba(0, 255, 0, 0.1);
+}
+
+.amount-saved {
+    background: rgba(255, 0, 0, 0.1);
+}
+
+.form-col button {
+    margin: 0;
+    width: 100%;
+}
+
+
+/* styles div */
+.style span {
+    font-family: 'Poppins', sans-serif;
+}
+
+.top-right{
+    position: absolute;
+    top: 5px;
+    right: 0;
+    margin-right: -50px;
+    margin-top: -40px;
+    color: pink;
+    font-size: 150px;
+    font-weight: bold;
+}
+
+.bottom-right{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: -70px;
+    margin-bottom: -120px;
+    color: #b0e0e6;
+    font-size: 200px;
+    font-weight: bold;
+    transform: rotate(45deg);
+}
+
+.bottom-left{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-left: -50px;
+    margin-bottom: -150px;
+    color: #329932;
+    font-size: 200px;
+    font-weight: bold;
+    transform: rotate(45deg);
+}
+
+@media only screen and (min-width: 750px) {
+    #main-body {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .body-col {
+        width: 50%;
+    }
+}
