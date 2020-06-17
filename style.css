@@ -18,7 +18,7 @@
 }
 
 .blue-bg {
-    background: #000080;
+    background: #062863;
     text-align: center;
     position: relative;
     overflow: hidden;
@@ -60,16 +60,20 @@
     padding: 10px;
     margin: 5px;
     background: rgba(0, 0, 255, 0.1);
-    border: navy;
-    color: #000080;
+    border: none;
+    color: #062863;
 }
 
 .input-col {
-    width: 90%;
+    width: 93%;
 }
 
 .grid-col select {
     width: 100%;
+}
+
+.grid-col select option {
+    padding: 10px;
 }
 
 .calc-btn {
@@ -77,7 +81,7 @@
 }
 
 button {
-    background: #000080;
+    background: #062863;
     color: #fff;
     padding: 15px 20px;
     border: none;
@@ -90,20 +94,24 @@ button {
 }
 
 /* part 2 content*/
+.balance {
+    color: #000080;
+}
+
 .form-col {
     padding: 10px;
     width: 60%;
     margin: 15px auto 0 auto;
     text-align: left;
-    color: #000080;
+    color: #062863;
 }
 
 .interest, .duration {
-    background: rgba(0, 255, 0, 0.1);
+    background: #e3ffe2;
 }
 
 .amount-saved {
-    background: rgba(255, 0, 0, 0.1);
+    background: #fff0f5;
 }
 
 .form-col button {
@@ -160,5 +168,13 @@ button {
 
     .body-col {
         width: 50%;
+    }
+
+    .input-col {
+        width: 90%;
+    }
+    
+    .grid-col select {
+        width: 95%;
     }
 }
