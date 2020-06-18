@@ -7,6 +7,17 @@
     position: relative;
 }
 
+#logo {
+    position: absolute;
+    top: 0;
+    left: 45px;
+    margin-top: -10%;
+}
+
+#logo img{
+    width: 35%;
+}
+
 .body-col {
     width: 100%;
 }
@@ -165,6 +176,16 @@ button {
     #main-body {
         display: flex;
         justify-content: space-around;
+    }
+    
+     #logo {
+        margin-top: 0;
+        top: 20px;
+        left: 80px;
+    }
+
+    #logo img {
+        width: 25%;
     }
 
     .body-col {
