@@ -19,6 +19,7 @@ function respondMessage(principal, duration, interest) {
     document.getElementById("amount_saved").innerHTML=principal;
     document.getElementById("total_interest").innerHTML=interest;
     document.getElementById("years").innerHTML=duration;
+    document.getElementById("response").focus();
 
 
 }
