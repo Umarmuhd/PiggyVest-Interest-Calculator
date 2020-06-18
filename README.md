@@ -21,4 +21,5 @@ The tool is 100% accurate
 
 #The tool structure works with 
 index.html
-main.css
+style.css
+calculator.js
