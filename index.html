@@ -23,54 +23,54 @@
                 <div class="calc-container">
                     <div class="grid-col">
                         <label for="amount">Amount</label>
-                        <input class="input-col" type="text" value="20,000.00" name="" id="">
+                        <input class="input-col" type="text" value="2000.00" name="amount" id="amount">
                     </div>
                     <div class="grid-col">
                         <label for="plans">Savings Plan</label>
-                        <select name="plans" id="">
-                            <option style="padding: 10px;" value="Safelock">PIGGY Bank</option>
-                            <option value="Safelock">SafeLock</option>
-                            <option value="Safelock">Targets</option>
-                            <option value="Safelock">Flex Naira</option>
-                            <option value="Safelock">Flex Dollar</option>
+                        <select name="plans" id="plans">
+                            <option style="padding: 10px;" value="piggy">PIGGY Bank</option>
+                            <option value="safelock">SafeLock</option>
+                            <option value="targets">Targets</option>
+                            <option value="flex_naira">Flex Naira</option>
+                            <option value="flex_dollar">Flex Dollar</option>
                         </select>
                     </div>
                     <div class="grid-col">
-                        <label for="plans">Savings Frequency</label>
-                        <select name="plans" id="">
-                            <option value="Safelock">Weekly</option>
-                            <option value="Safelock">Monthly</option>
-                            <option value="Safelock">Yearly</option>
+                        <label for="frequency">Savings Frequency</label>
+                        <select name="frequency" id="frequency">
+                            <option value="weekly">Weekly</option>
+                            <option value="monthly">Monthly</option>
+                            <option value="yearly">Yearly</option>
                         </select>
                     </div>
                     <div class="grid-col">
-                        <label for="plans">Savings Duration (Yearly}</label>
-                        <input class="input-col" type="number" value="1">
+                        <label for="duration">Savings Duration (Yearly}</label>
+                        <input class="input-col" type="number" value="1" id="duration">
                     </div>
                 </div>
-                <div class="calc-btn">
-                    <button>Calculate</button>
+                <div class="calc-btn" id="calc">
+                    <button onclick="calculate()">Calculate</button>
                 </div>
            </div>
         </div>
         <div class="body-col blue-bg">
             <div class="form-container">
-               <div class="balance">
+               <div class="balance" id="balance">
                     <h3>Total Balance</h3>
-                    <h2>#230,783.08</h2>
+                    <h2>#<span id="total_balance">104000</span> </h2>
                </div>
     
-                <div class="form-col interest">
+                <div class="form-col interest" id="interest">
                     <h5>Interest</h5>
-                    <h4>#20,808.08</h4>
+                    <h4>#<span id="total_interest">15600</span></h4>
                 </div>
-                <div class="form-col amount-saved">
+                <div class="form-col amount-saved" id="saved">
                     <h5>Amount saved</h5>
-                    <h4>#230,783.08</h4>
+                    <h4>#<span id="amount_saved">104000</span></h4>
                 </div>
-                <div class="form-col duration">
+                <div class="form-col duration" id="duration">
                     <h5>Duration</h5>
-                    <h4>1 year</h4>
+                    <h4><span id="years">1</span> year</h4>
                 </div>
                 <div class="form-col">
                     <button>Start saving</button>
@@ -83,5 +83,6 @@
             </div>
         </div>
     </section>
+    <script src="./calculator.js"></script>
 </body>
 </html>
