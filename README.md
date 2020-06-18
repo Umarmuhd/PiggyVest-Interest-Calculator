@@ -23,3 +23,6 @@ The tool is 100% accurate
 index.html
 style.css
 calculator.js
+
+post link
+https://lucid.blog/umar/post/team-a-version-of-piggyvest-interest-calculator-0ea
